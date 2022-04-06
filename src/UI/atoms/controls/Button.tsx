@@ -5,6 +5,8 @@ import {
     BackgroundProps,
     color,
     ColorProps,
+    display,
+    DisplayProps,
     space,
     SpaceProps,
     typography,
@@ -13,11 +15,12 @@ import {
 } from 'styled-system'
 import { IButton } from '../../../utils/types'
 
-const Button = styled('button')<IButton & SpaceProps & ColorProps & BackgroundProps & TypographyProps & HTMLProps<HTMLButtonElement>>(
+const Button = styled('button')<IButton & SpaceProps & DisplayProps & ColorProps & BackgroundProps & TypographyProps & HTMLProps<HTMLButtonElement>>(
     space,
     color,
     background,
     typography,
+    display,
     variant(
         {
             scale: 'buttonStyles'

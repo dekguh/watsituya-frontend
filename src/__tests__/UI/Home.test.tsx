@@ -10,15 +10,15 @@ describe('Home Page Testing', () => {
         render(<HomeTemplate />)
 
         // list menu
-        expect(screen.getAllByText(/Watsituya/)[0])
-        expect(screen.getAllByText(/home/)[0])
-        expect(screen.getAllByText(/featured/)[0])
-        expect(screen.getAllByText(/listing/)[0])
-        expect(screen.getAllByText(/about us/)[0])
-        expect(screen.getAllByText(/contact/)[0])
+        expect(screen.getByText(/Watsituya/i))
+        expect(screen.getByText(/home/i))
+        expect(screen.getByText(/featured/i))
+        expect(screen.getByText(/listing/i))
+        expect(screen.getByText(/about us/i))
+        expect(screen.getByText(/contact/))
 
         // button
-        expect(screen.getAllByText(/connect now/)[0])
+        expect(screen.getByText(/connect wallet/))
     })
 
     /**

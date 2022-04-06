@@ -13,3 +13,9 @@ export const TextParagraph = styled('p')<ColorProps & SpaceProps & TypographyPro
     space,
     typography
 )
+
+export const TextSpan = styled('span')<ColorProps & SpaceProps & TypographyProps>(
+    color,
+    space,
+    typography
+)
