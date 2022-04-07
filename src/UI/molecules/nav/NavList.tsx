@@ -29,6 +29,9 @@ const NavList : React.FC<INavList> = ({ listMenu, isOpen }) => {
                 top={0}
                 left={0}
                 right={0}
+                style={{
+                    backdropFilter: windowWidth >= 992 ? 'none' : 'blur(200px)'
+                }}
                 
             >
                 {listMenu.length >= 1 && listMenu.map((data, i) => (

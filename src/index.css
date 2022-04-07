@@ -8,3 +8,9 @@ body {
     margin: 0;
     background-color: #221E3C;
 }
+
+.webkit-text-gradient {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}

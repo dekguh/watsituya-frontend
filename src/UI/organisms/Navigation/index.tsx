@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { display, DisplayProps, space, SpaceProps, flexbox, FlexboxProps, layout, LayoutProps } from 'styled-system'
+import { display, DisplayProps, space, SpaceProps, flexbox, FlexboxProps, layout, LayoutProps, position, PositionProps } from 'styled-system'
 import NavButton from '../../molecules/nav/NavButton'
 import NavList from '../../molecules/nav/NavList'
 import NavLogo from '../../molecules/nav/NavLogo'
@@ -10,6 +10,8 @@ const Navigation = () => {
 
     return (
         <NavWrapper
+            position='relative'
+            zIndex={99}
             display='flex'
             flexDirection={'row'}
             flexWrap={['nowrap', 'wrap', 'wrap', 'nowrap', 'nowrap']}
@@ -53,11 +55,12 @@ const Navigation = () => {
     )
 }
 
-const NavWrapper = styled('div')<SpaceProps & FlexboxProps & DisplayProps & LayoutProps>(
+const NavWrapper = styled('div')<SpaceProps & FlexboxProps & DisplayProps & LayoutProps & PositionProps>(
     space,
     flexbox,
     display,
-    layout
+    layout,
+    position
 )
 
 export default Navigation

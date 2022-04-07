@@ -1,4 +1,5 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler } from 'react';
+import { DisplayProps } from 'styled-system';
 
 export interface IHomeTemplate {
 
@@ -23,4 +24,16 @@ export interface INavList {
 export interface INavButton {
     onClickConnect?: MouseEventHandler;
     onClickMenu?: MouseEventHandler;
+}
+
+export interface IBoxLightBlur {
+    filterValue?: number | string;
+    backgroundRGBA?: string;
+    width?: any;
+    height?: any;
+}
+
+export interface IHomeHeroContent {
+    onClickMinted?: MouseEventHandler;
+    title?: string;
 }

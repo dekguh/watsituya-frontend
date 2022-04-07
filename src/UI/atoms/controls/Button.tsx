@@ -1,5 +1,5 @@
 import React, { HTMLProps } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import {
     background,
     BackgroundProps,
@@ -25,7 +25,10 @@ const Button = styled('button')<IButton & SpaceProps & DisplayProps & ColorProps
         {
             scale: 'buttonStyles'
         }
-    )
+    ),
+    css({
+        cursor: 'pointer'
+    })
 )
 
 export default Button

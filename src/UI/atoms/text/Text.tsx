@@ -1,21 +1,24 @@
-import React from 'react'
+import React, { HTMLProps } from 'react'
 import styled from 'styled-components'
-import { color, ColorProps, space, SpaceProps, typography, TypographyProps  } from 'styled-system'
+import { background, BackgroundProps, color, ColorProps, space, SpaceProps, typography, TypographyProps  } from 'styled-system'
 
-export const TextHeading = styled('h1')<ColorProps & SpaceProps & TypographyProps>(
+export const TextHeading = styled('h1')<ColorProps & SpaceProps & TypographyProps & BackgroundProps & HTMLProps<HTMLHeadingElement>>(
     color,
     space,
-    typography
+    typography,
+    background
 )
 
-export const TextParagraph = styled('p')<ColorProps & SpaceProps & TypographyProps>(
+export const TextParagraph = styled('p')<ColorProps & SpaceProps & TypographyProps & BackgroundProps & HTMLProps<HTMLParagraphElement>>(
     color,
     space,
-    typography
+    typography,
+    background
 )
 
-export const TextSpan = styled('span')<ColorProps & SpaceProps & TypographyProps>(
+export const TextSpan = styled('span')<ColorProps & SpaceProps & TypographyProps & BackgroundProps & HTMLProps<HTMLSpanElement>>(
     color,
     space,
-    typography
+    typography,
+    background
 )
