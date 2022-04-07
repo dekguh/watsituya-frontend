@@ -14,7 +14,6 @@ const HomeHeroContent : React.FC<IHomeHeroContent> = ({ onClickMinted, title = '
         margin='0 auto'
         style={{
             textAlign: 'center',
-            height: '100vh'
         }}
     >
         <Image

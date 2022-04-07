@@ -37,3 +37,12 @@ export interface IHomeHeroContent {
     onClickMinted?: MouseEventHandler;
     title?: string;
 }
+
+export interface ICardNFT {
+    imgSrc?: string;
+    user?: string;
+    totalEth?: number | string;
+    id?: number;
+    title?: string;
+    to?: string;
+}

@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import { flexbox, FlexboxProps, layout, LayoutProps, OrderProps, position, PositionProps, space, SpaceProps } from 'styled-system'
+import { background, BackgroundProps, flexbox, FlexboxProps, layout, LayoutProps, OrderProps, position, PositionProps, space, SpaceProps, typography, TypographyProps } from 'styled-system'
 
-const Box = styled('div')<SpaceProps & FlexboxProps & OrderProps & LayoutProps & PositionProps>(
+const Box = styled('div')<SpaceProps & FlexboxProps & OrderProps & LayoutProps & PositionProps & BackgroundProps & TypographyProps>(
     space,
     flexbox,
     layout,
-    position
+    position,
+    background,
+    typography
 )
 
 export default Box

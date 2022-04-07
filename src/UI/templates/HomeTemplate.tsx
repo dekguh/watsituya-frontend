@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../atoms/controls/Button'
 import HomeHero from '../organisms/HomeHero'
 import Navigation from '../organisms/Navigation'
+import TopPicklist from '../organisms/TopPickList'
 
 const HomeTemplate = () => {
   return (
@@ -13,6 +14,8 @@ const HomeTemplate = () => {
         <Navigation />
 
         <HomeHero />
+
+        <TopPicklist />
     </div>
   )
 }
