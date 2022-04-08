@@ -19,7 +19,10 @@ export default {
         gray: {
             light: '#75747C'
         },
-        dark: '#221E3C'
+        dark: '#221E3C',
+        green: {
+            primary: '#11962F'
+        }
     },
     /** button style */
     buttonStyles: {

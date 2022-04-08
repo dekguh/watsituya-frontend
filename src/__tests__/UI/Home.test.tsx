@@ -37,9 +37,9 @@ describe('Home Page Testing', () => {
     it('should home page have a rate section', () => {
         render(<HomeTemplate />)
 
-        expect(screen.getByText('Bitcoin/USD'))
-        expect(screen.getByText('Ethereum/USD'))
-        expect(screen.getByText('Yearn/USD'))
+        expect(screen.getByText(/Bitcoin\/USD/))
+        expect(screen.getByText(/ETH\/USD/))
+        expect(screen.getByText(/Yearn\/USD/))
     })
 
     /**

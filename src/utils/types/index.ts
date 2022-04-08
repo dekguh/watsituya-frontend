@@ -46,3 +46,14 @@ export interface ICardNFT {
     title?: string;
     to?: string;
 }
+
+export interface ICardRate {
+    iconSrc?: string;
+    textRate?: string;
+    priceRate?: string | number;
+    isUp?: boolean;
+    /**
+     * 10% or -10%
+     */
+    totalChange?: number | string;
+}

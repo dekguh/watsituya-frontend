@@ -12,6 +12,7 @@ const TopPicklist = () => {
         flexWrap={'nowrap'}
         paddingY='30px'
     >
+        {/* item */}
         <Box
             maxWidth='23%'
             width='100%'
@@ -27,6 +28,7 @@ const TopPicklist = () => {
             />
         </Box>
 
+        {/* item */}
         <Box
             maxWidth='23%'
             width='100%'
@@ -45,6 +47,7 @@ const TopPicklist = () => {
             />
         </Box>
 
+        {/* arrow */}
         <Box
             flex={'1 1 auto'}
             textAlign='center'
@@ -53,6 +56,7 @@ const TopPicklist = () => {
             <Image src='/images/arrow-top-pick.svg'></Image>
         </Box>
 
+        {/* item */}
         <Box
             maxWidth='23%'
             width='100%'
@@ -71,6 +75,7 @@ const TopPicklist = () => {
             />
         </Box>
 
+        {/* item */}
         <Box
             maxWidth='23%'
             width='100%'
