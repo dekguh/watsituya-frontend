@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { display, DisplayProps, space, SpaceProps, flexbox, FlexboxProps, layout, LayoutProps, position, PositionProps } from 'styled-system'
+import { handleConnectWallet } from '../../../utils/ether'
 import NavButton from '../../molecules/nav/NavButton'
 import NavList from '../../molecules/nav/NavList'
 import NavLogo from '../../molecules/nav/NavLogo'
@@ -50,6 +51,13 @@ const Navigation = () => {
 
             <NavButton
                 onClickMenu={() => setIsOpen(!isOpen)}
+                onClickConnect={() => {
+                    const connect = async () => {
+                        const data = await handleConnectWallet()
+                        console.log(data)
+                    }
+                    connect()
+                }}
             />
         </NavWrapper>
     )

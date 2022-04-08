@@ -21,7 +21,7 @@ const NavList : React.FC<INavList> = ({ listMenu, isOpen }) => {
                 justifyContent='center'
                 alignItems={['center', 'start', 'start', 'center', 'center']}
                 flexDirection={['row', 'column', 'column', 'row', 'row']}
-                background={['none', 'rgba(255, 255, 255, 0.15)', 'rgba(255, 255, 255, 0.15)', 'none', 'none']}
+                background={['none', 'rgba(255, 255, 255, 0.4)', 'rgba(255, 255, 255, 0.4)', 'none', 'none']}
                 borderRadius={[0, 6, 6, 0, 0]}
                 paddingTop={[0, '25px', '25px', 0, 0]}
                 position={['relative', 'absolute', 'absolute', 'relative', 'relative']}
@@ -40,6 +40,7 @@ const NavList : React.FC<INavList> = ({ listMenu, isOpen }) => {
                         paddingRight={['0', '0', '0', '30px', '30px']}
                         paddingBottom={['0', '20px', '20px', '0', '0']}
                         paddingLeft={['20px', '20px', '0', '0', '0']}
+                        key={i}
                     >
                         <NavLink href={data.to}>
                             <TextSpan>{data.title}</TextSpan>
