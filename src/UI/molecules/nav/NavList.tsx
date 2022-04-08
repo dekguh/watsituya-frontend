@@ -30,7 +30,8 @@ const NavList : React.FC<INavList> = ({ listMenu, isOpen }) => {
                 left={0}
                 right={0}
                 style={{
-                    backdropFilter: windowWidth >= 992 ? 'none' : 'blur(200px)'
+                    backdropFilter: windowWidth >= 992 ? 'none' : 'blur(200px)',
+                    marginTop: windowWidth >= 992 ? '0' : '20px'
                 }}
                 
             >
@@ -38,6 +39,7 @@ const NavList : React.FC<INavList> = ({ listMenu, isOpen }) => {
                     <NavItem
                         paddingRight={['0', '0', '0', '30px', '30px']}
                         paddingBottom={['0', '20px', '20px', '0', '0']}
+                        paddingLeft={['20px', '20px', '0', '0', '0']}
                     >
                         <NavLink href={data.to}>
                             <TextSpan>{data.title}</TextSpan>
