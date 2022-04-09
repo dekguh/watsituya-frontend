@@ -2,6 +2,7 @@ import React from 'react'
 import FeaturedItem from '../organisms/FeaturedItem'
 import HomeHero from '../organisms/HomeHero'
 import Navigation from '../organisms/Navigation'
+import NewListings from '../organisms/NewListings'
 import TopPicklist from '../organisms/TopPickList'
 import TopRate from '../organisms/TopRate'
 
@@ -21,6 +22,8 @@ const HomeTemplate = () => {
         <TopRate />
 
         <FeaturedItem />
+
+        <NewListings />
     </div>
   )
 }
