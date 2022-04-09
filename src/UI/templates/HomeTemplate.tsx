@@ -1,4 +1,5 @@
 import React from 'react'
+import FeaturedItem from '../organisms/FeaturedItem'
 import HomeHero from '../organisms/HomeHero'
 import Navigation from '../organisms/Navigation'
 import TopPicklist from '../organisms/TopPickList'
@@ -18,6 +19,8 @@ const HomeTemplate = () => {
         <TopPicklist />
 
         <TopRate />
+
+        <FeaturedItem />
     </div>
   )
 }

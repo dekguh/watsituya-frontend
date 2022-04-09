@@ -1,10 +1,11 @@
 import React, { HTMLProps } from 'react'
 import styled from 'styled-components'
-import { layout, LayoutProps, space, SpaceProps } from 'styled-system'
+import { layout, LayoutProps, position, PositionProps, space, SpaceProps } from 'styled-system'
 
-const Image = styled('img')<LayoutProps & SpaceProps & HTMLProps<HTMLImageElement>>(
+const Image = styled('img')<LayoutProps & PositionProps & SpaceProps & HTMLProps<HTMLImageElement>>(
     layout,
-    space
+    space,
+    position
 )
 
 export default Image

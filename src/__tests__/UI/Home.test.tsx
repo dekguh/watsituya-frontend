@@ -12,7 +12,6 @@ describe('Home Page Testing', () => {
         // list menu
         expect(screen.getByText(/Watsituya/i))
         expect(screen.getByText(/home/i))
-        expect(screen.getByText(/featured/i))
         expect(screen.getByText(/listing/i))
         expect(screen.getByText(/about us/i))
         expect(screen.getByText(/contact/))
