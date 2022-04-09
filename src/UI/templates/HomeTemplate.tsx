@@ -1,5 +1,6 @@
 import React from 'react'
 import FeaturedItem from '../organisms/FeaturedItem'
+import Footer from '../organisms/Footer'
 import HomeHero from '../organisms/HomeHero'
 import Navigation from '../organisms/Navigation'
 import NewListings from '../organisms/NewListings'
@@ -24,6 +25,8 @@ const HomeTemplate = () => {
         <FeaturedItem />
 
         <NewListings />
+
+        <Footer />
     </div>
   )
 }
