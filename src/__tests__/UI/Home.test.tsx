@@ -61,4 +61,13 @@ describe('Home Page Testing', () => {
         expect(screen.getByText('Place a bid for new items'))
         expect(screen.getByText('New Listings'))
     })
+
+    /**
+     * should home page have a footer
+     */
+    it('should home page have a footer', () => {
+        render(<HomeTemplate />)
+
+        expect(screen.getByText('copyright 2022 - design by dekguh'))
+    })
 })
