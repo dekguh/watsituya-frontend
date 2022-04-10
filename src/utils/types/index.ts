@@ -57,3 +57,8 @@ export interface ICardRate {
      */
     totalChange?: number | string;
 }
+
+export interface IAuthState {
+    isLogin?: boolean;
+    address?: string | null;
+}

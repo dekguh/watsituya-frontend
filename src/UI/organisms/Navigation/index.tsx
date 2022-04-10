@@ -1,13 +1,18 @@
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { display, DisplayProps, space, SpaceProps, flexbox, FlexboxProps, layout, LayoutProps, position, PositionProps } from 'styled-system'
 import { handleConnectWallet } from '../../../utils/ether'
+import { actSetAddress, actSetIsLogin } from '../../../utils/redux/auth/reduce'
+import { AppDispatch, RootState } from '../../../utils/redux/store'
 import NavButton from '../../molecules/nav/NavButton'
 import NavList from '../../molecules/nav/NavList'
 import NavLogo from '../../molecules/nav/NavLogo'
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
+    const dispatch = useDispatch<AppDispatch>()
+    const authState = useSelector((state : RootState) => state.auth)
 
     return (
         <NavWrapper
@@ -54,7 +59,8 @@ const Navigation = () => {
                 onClickConnect={() => {
                     const connect = async () => {
                         const data = await handleConnectWallet()
-                        console.log(data)
+                        dispatch(actSetAddress(data))
+                        dispatch(actSetIsLogin(true))
                     }
                     connect()
                 }}
