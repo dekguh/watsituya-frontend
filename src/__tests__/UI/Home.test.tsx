@@ -1,6 +1,12 @@
 import { render, screen } from '@testing-library/react'
 import React from 'react'
 import HomeTemplate from '../../UI/templates/HomeTemplate'
+import { useDispatch } from 'react-redux'
+
+jest.mock('react-redux', () => ({
+    useDispatch: () => jest.fn(),
+    useSelector: () => jest.fn()
+}))
 
 describe('Home Page Testing', () => {
     /**

@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { IAuthState } from '../../types';
 
-const initialState = {
+export const initialState = {
     isLogin: false,
     address: ''
 } as IAuthState
